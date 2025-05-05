@@ -1,10 +1,20 @@
-if SHIELD_MRIYA_LEFT
+if SHIELD_MRIYA_CENTRAL_DONGLE
 
 config ZMK_KEYBOARD_NAME
     default "MRIYA"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
+
+endif
+
+if SHIELD_MRIYA_LEFT
+
+config ZMK_KEYBOARD_NAME
+    default "MRIYA"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default n
 
 endif
 
